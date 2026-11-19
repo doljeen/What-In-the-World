@@ -16,6 +16,8 @@
     <img src="https://img.shields.io/badge/Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white">
   </p>
 
+  <p>🏆 <strong>SSAFY 15기 특화 프로젝트 우수상</strong></p>
+
   <p>SSAFY 15기 특화 프로젝트 · 6인 · 7주<br>
   <strong>강석진 — 회원 인증·인가 / 관심 테마 실시간 알림 (Backend + 연동 Frontend)</strong></p>
 </div>
