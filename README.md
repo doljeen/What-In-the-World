@@ -19,19 +19,19 @@
 
 3D 지구본과 실시간 이슈 TOP 5를 통해 세계에서 주목하는 뉴스를 살펴봅니다. 전체 수집 기사와 최근 24시간 수집 현황을 함께 확인할 수 있습니다.
 
-![글로벌 동향과 실시간 이슈 TOP 5](docs/images/global-dashboard.png)
+![글로벌 동향과 실시간 이슈 TOP 5](DOCS/images/global-dashboard.png)
 
 ### 2. 같은 이슈, 다른 나라의 보도 관점
 
 이슈를 선택하면 관련 기사 수와 보도 국가, 평균 논조를 확인합니다. 국가별 보도 요약과 긍정·중립·부정 분류를 비교해 한 사건을 여러 관점에서 살펴볼 수 있습니다. 논조는 분석 결과이며 사실 여부를 판정하는 지표는 아닙니다.
 
-![이슈 상세와 국가별 논조 비교](docs/images/issue-perspectives.png)
+![이슈 상세와 국가별 논조 비교](DOCS/images/issue-perspectives.png)
 
 ### 3. 관심 국가의 뉴스 탐색
 
 국가별 기사 수, 핫이슈 TOP 5, 인기 테마를 확인합니다. 전체 뉴스 탐색과 과거 시점의 데이터를 살펴보는 타임머신도 제공합니다.
 
-![미국의 주요 이슈와 인기 테마](docs/images/country-dashboard.png)
+![미국의 주요 이슈와 인기 테마](DOCS/images/country-dashboard.png)
 
 ### 4. 관심 테마의 새 소식 받기
 
