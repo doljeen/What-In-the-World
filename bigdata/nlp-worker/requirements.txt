@@ -1,0 +1,10 @@
+confluent-kafka
+fasttext-wheel
+numpy<2
+pycountry
+Babel
+gliner
+sentence-transformers
+torch
+transformers>=4.48.0
+sentencepiece

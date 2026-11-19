@@ -1,0 +1,8 @@
+torch
+transformers>=4.44
+sentencepiece
+sentence-transformers
+numpy
+PyYAML
+accelerate
+scikit-learn
