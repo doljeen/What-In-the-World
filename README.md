@@ -45,13 +45,13 @@
 
 | 담당 영역 | 구현 내용 | 대표 커밋 |
 | --- | --- | --- |
-| 이메일 회원가입 | 이메일 중복 검사, 인증 코드 발송·검증, 인증 완료 여부 확인 후 가입 | [가입 검증](https://github.com/doljeen/What-In-the-World/commit/a836760) |
-| 세션 기반 인증 | 로그인·로그아웃, 내 정보 조회, 탈퇴 및 재가입 처리 | [로그인](https://github.com/doljeen/What-In-the-World/commit/8b78c92), [탈퇴](https://github.com/doljeen/What-In-the-World/commit/dbcefe2) |
-| 비밀번호 관리 | 비밀번호 재설정 인증, 재설정 및 로그인 사용자의 비밀번호 변경 | [재설정](https://github.com/doljeen/What-In-the-World/commit/a783a13) |
-| SSAFY OAuth | 소셜 로그인·가입, 탈퇴 회원 재가입, 접속 도메인에 맞는 콜백 URL 생성 | [OAuth](https://github.com/doljeen/What-In-the-World/commit/38eb82b), [재가입](https://github.com/doljeen/What-In-the-World/commit/5d26264) |
-| 관심 테마 알림 | 전체·테마별 수신 설정, 목록·미확인 수 조회, 읽음·전체 읽음·삭제 | [테마 설정](https://github.com/doljeen/What-In-the-World/commit/380006a), [읽음 처리](https://github.com/doljeen/What-In-the-World/commit/9f71229) |
-| 알림 생성 배치 | 시간 구간별 기사 집계, 처리 구간 관리, 중복 생성을 막는 제약 조건 | [집계 SQL](https://github.com/doljeen/What-In-the-World/commit/31f48c4), [스케줄러](https://github.com/doljeen/What-In-the-World/commit/8c4a116) |
-| SSE·화면 연동 | 사용자·세션 검증, 연결 정리, 저장 후 갱신 이벤트, 알림 토스트 및 관련 UI 연동 | [SSE 구독](https://github.com/doljeen/What-In-the-World/commit/842fb48), [저장 후 전송](https://github.com/doljeen/What-In-the-World/commit/9713ef9) |
+| 이메일 회원가입 | 이메일 중복 검사, 인증 코드 발송·검증, 인증 완료 여부 확인 후 가입 | [가입 검증](https://github.com/doljeen/What-In-the-World/commit/aa3ac429376f4da3dd2a036babd2ecc78c588c61) |
+| 세션 기반 인증 | 로그인·로그아웃, 내 정보 조회, 탈퇴 및 재가입 처리 | [로그인](https://github.com/doljeen/What-In-the-World/commit/668d98aa5ef4b1b59117f3ea595d5e6f39a3cf6b), [탈퇴](https://github.com/doljeen/What-In-the-World/commit/f41b6d061d73c7f84523a41d385e590bdd353d76) |
+| 비밀번호 관리 | 비밀번호 재설정 인증, 재설정 및 로그인 사용자의 비밀번호 변경 | [재설정](https://github.com/doljeen/What-In-the-World/commit/2956aa557b9e82c072b583c581a2b1ec5aece52d) |
+| SSAFY OAuth | 소셜 로그인·가입, 탈퇴 회원 재가입, 접속 도메인에 맞는 콜백 URL 생성 | [OAuth](https://github.com/doljeen/What-In-the-World/commit/0634ef911be981bcd78a19ed2049685629cee0a3), [재가입](https://github.com/doljeen/What-In-the-World/commit/2bc286f49f8813ccbb73dbe235865a2150a845e0) |
+| 관심 테마 알림 | 전체·테마별 수신 설정, 목록·미확인 수 조회, 읽음·전체 읽음·삭제 | [테마 설정](https://github.com/doljeen/What-In-the-World/commit/21cc0202861ba3661e81acd6ea666d9b5aa68bae), [읽음 처리](https://github.com/doljeen/What-In-the-World/commit/49374de2f49b3827e9596ab8604cea382e18ee62) |
+| 알림 생성 배치 | 시간 구간별 기사 집계, 처리 구간 관리, 중복 생성을 막는 제약 조건 | [집계 SQL](https://github.com/doljeen/What-In-the-World/commit/450211646811fd591ed90eacab250bf3d613cf80), [스케줄러](https://github.com/doljeen/What-In-the-World/commit/177b469ff52d53459c0027b55c8c312fd1f40f48) |
+| SSE·화면 연동 | 사용자·세션 검증, 연결 정리, 저장 후 갱신 이벤트, 알림 토스트 및 관련 UI 연동 | [SSE 구독](https://github.com/doljeen/What-In-the-World/commit/bd19c421c670f9ca734fe88e160aa9a10f7bbae5), [저장 후 전송](https://github.com/doljeen/What-In-the-World/commit/c72d43803f85dfb9adaa70d3b49ef16775e7e78c) |
 
 ## 트러블슈팅
 
@@ -62,7 +62,7 @@
 - **검증:** 탈퇴한 계정으로 다시 가입하는 흐름을 직접 확인했습니다.
 - **설계에 대한 판단:** 논리 삭제를 사용한 기존 구조에서 재가입 문제를 해결한 사례입니다. 데이터 복원 요구가 명확하지 않았다면 물리 삭제와 연관 데이터 정리가 더 단순했을 수 있습니다. 논리 삭제 자체를 성과로 내세우기보다 보존 정책과 구현의 복잡도를 함께 검토해야 한다고 배웠습니다.
 
-[관련 변경 확인](https://github.com/doljeen/What-In-the-World/commit/5d26264)
+[관련 변경 확인](https://github.com/doljeen/What-In-the-World/commit/2bc286f49f8813ccbb73dbe235865a2150a845e0)
 
 ### 알림을 저장하기 전에 화면이 먼저 갱신되는 상황 방지
 
@@ -72,7 +72,7 @@
 
 `기사 집계 → 알림 저장 → 트랜잭션 커밋 → SSE 갱신 신호 → 알림 API 재조회`
 
-[관련 변경 확인](https://github.com/doljeen/What-In-the-World/commit/9713ef9)
+[관련 변경 확인](https://github.com/doljeen/What-In-the-World/commit/c72d43803f85dfb9adaa70d3b49ef16775e7e78c)
 
 ### 알림 재처리 시 중복 생성 방지
 
@@ -80,19 +80,19 @@
 - **해결:** 사용자·테마·집계 시작·종료 시각을 묶은 유일 제약과 `ON CONFLICT DO NOTHING`을 적용했습니다. 알림 생성과 처리 구간 갱신은 같은 트랜잭션으로 처리하고, 작업 상태를 잠가 동일 작업의 동시 처리를 제어했습니다.
 - **트레이드오프:** 10분 단위 집계로 테마별 알림을 묶어 전달하므로 기사 한 건마다 즉시 알리는 구조는 아닙니다. 처리 유예 시간을 두지만, 모든 지연 수집 데이터를 보장하는 구조는 아닙니다.
 
-[스키마 변경](https://github.com/doljeen/What-In-the-World/commit/365667b) · [배치 구현](https://github.com/doljeen/What-In-the-World/commit/8c4a116)
+[스키마 변경](https://github.com/doljeen/What-In-the-World/commit/975825a24de8a3c625514fc243c11c34c90a28d3) · [배치 구현](https://github.com/doljeen/What-In-the-World/commit/177b469ff52d53459c0027b55c8c312fd1f40f48)
 
 ### 종료된 세션의 SSE 연결 관리
 
 사용자와 세션을 함께 확인하고, 연결 종료·타임아웃·오류 시 emitter를 정리했습니다. heartbeat와 전송 시점에도 세션 유효성을 확인하도록 구성했습니다. 실제 서비스에서 알림 수신과 읽음 처리 동작을 확인했습니다. 현재 연결은 서버 메모리에서 관리하므로, 여러 서버로 확장할 때는 서버 간 이벤트 전달 방식을 추가로 설계해야 합니다.
 
-[SSE 연결 구현](https://github.com/doljeen/What-In-the-World/commit/842fb48)
+[SSE 연결 구현](https://github.com/doljeen/What-In-the-World/commit/bd19c421c670f9ca734fe88e160aa9a10f7bbae5)
 
 ### 운영 로그인 후 개발 도메인으로 이동하는 문제
 
 개발 도메인에 고정된 콜백 URL 대신 접속한 `location.origin`을 기준으로 URL을 생성하도록 수정했습니다. 프론트 코드뿐 아니라 배포 브랜치와 실제 배포된 번들을 확인해야 설정 변경의 반영 여부를 판단할 수 있었습니다. OAuth 제공자의 허용 콜백 및 백엔드의 토큰 교환 설정도 일치해야 합니다.
 
-[관련 변경 확인](https://github.com/doljeen/What-In-the-World/commit/5c05db7)
+[관련 변경 확인](https://github.com/doljeen/What-In-the-World/commit/bdcc16d783f43a3d51f5ed5f81eed7fc90d1db9c)
 
 ## 기술 구성
 
@@ -141,6 +141,6 @@
 
 ## 커밋 이력 보존
 
-GitLab 운영 `master`의 코드를 기준으로 가져왔습니다. 개별 작업 커밋이 남아 있는 `develop` 이력은 코드 변경 없이 병합 이력에 연결하며, 원본 브랜치와 태그도 보존합니다. 팀원들의 작성자·이메일·작성 시각은 바꾸지 않습니다.
+GitLab 운영 `master`의 코드를 기준으로 가져왔습니다. 개별 작업 커밋이 남아 있는 `develop` 이력은 코드 변경 없이 병합 이력에 연결하며, 원본 브랜치와 태그도 보존합니다. 강석진의 기존 커밋 이메일만 GitHub `doljeen`의 noreply 이메일로 변경했습니다. 커밋 내용·메시지·날짜와 다른 팀원의 작성자 정보는 유지했으며, 이력 재작성으로 커밋 SHA는 변경되었습니다.
 
-GitHub의 기여 표시는 과거 커밋 이메일과 계정 연결 상태에 따라 달라집니다. 기존 GitLab CI 설정은 개발 당시의 기록이며, GitHub로 옮겼다고 자동 배포되는 것은 아닙니다.
+개인 커밋은 `156649520+doljeen@users.noreply.github.com`으로 연결했습니다. GitHub 기여는 원래 커밋 날짜 기준으로 반영됩니다. 원본 이력은 로컬 bundle로 별도 백업했습니다. 기존 GitLab CI 설정은 개발 당시의 기록이며, GitHub로 옮겼다고 자동 배포되는 것은 아닙니다.

@@ -6,7 +6,7 @@
 - GitHub의 초기 커밋도 유지했습니다.
 - `develop`은 `ours` 전략으로 이력만 연결했습니다. 이 병합은 develop의 코드를 운영 코드에 추가 반영한 것이 아닙니다. 개별 작업 커밋의 출처를 보존하기 위한 이관 작업입니다.
 - 원격 GitLab의 네 브랜치는 `archive/gitlab/` 아래에 보존하고, 기존 태그도 함께 옮깁니다. 원격에서 이미 삭제되어 어떤 브랜치·태그에서도 도달할 수 없는 커밋까지 복구한 것은 아닙니다.
-- 원본 작성자, 이메일, 작성 시각, 원본 커밋 SHA를 변경하지 않았습니다. 기존 기본 README는 GitLab 원본 커밋에서 확인할 수 있습니다.
+- 최초 이관에서는 원본 이력을 유지했습니다. 이후 사용자 요청으로 `redmoon8888@gmail.com`인 author/committer 이메일만 `156649520+doljeen@users.noreply.github.com`으로 바꿨습니다. 이름·시각·트리·메시지·부모 관계와 다른 팀원 정보는 보존했고, 대상 커밋과 후속 커밋의 SHA는 변경되었습니다. 태그도 대응하는 새 커밋을 가리킵니다. 기존 기본 README는 GitLab 원본 커밋에서 확인할 수 있습니다.
 
 ## 이관 시 확인 (2026-11-19)
 
@@ -28,6 +28,10 @@
 
 ## GitHub 기여 표시
 
-과거 개인 커밋의 이메일은 `redmoon8888@gmail.com`입니다. 해당 이메일을 GitHub `doljeen` 계정에 연결해야 기여 인정 조건을 충족할 수 있습니다. 실제 반영 여부는 계정 설정과 GitHub 정책에 따릅니다. 과거 커밋은 원래 날짜에 표시되며 오늘의 기여로 날짜를 바꾸지 않습니다.
+과거 개인 커밋의 이메일 `redmoon8888@gmail.com`이 다른 본인 계정 `seokjine`에 연결되어 있음을 확인했습니다. 이메일 계정 설정 대신 이 저장소의 개인 커밋 이메일을 `doljeen`의 noreply 주소로 재작성했습니다. 실제 반영 여부는 계정 설정과 GitHub 정책에 따릅니다. 과거 커밋은 원래 날짜에 표시되며 오늘의 기여로 날짜를 바꾸지 않습니다.
 
 [GitHub 공식 기여 누락 안내](https://docs.github.com/en/account-and-profile/how-tos/contribution-settings/troubleshooting-missing-contributions)
+
+## 이메일 재작성 검증
+
+원본 이력은 재작성 전 로컬 bundle로 백업했습니다. 모든 커밋 객체를 비교해 이메일 및 부모 SHA 치환 외의 변경이 없음을 검사했습니다. GitLab 원격은 수정하지 않았습니다. GitHub에서는 기존 원격 SHA를 지정한 force-with-lease와 atomic push로 브랜치·태그를 교체했습니다. README의 커밋 링크도 새 SHA로 수정했습니다.
